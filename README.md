@@ -1,4 +1,4 @@
-Multiple Post Counts 1.0.0
+Multiple Post Counts 1.0.1
 ==========================
 
 Requires Yootil: https://proboards.com/library/plugins/item/38

@@ -452,26 +452,6 @@ Multiple_Post_Counts.api = function () {
 			Multiple_Post_Counts.KEY_DATA.clear();
 		}
 	}, {
-		key: "space",
-		value: function space() {
-			var user_id = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
-
-			var user_data = this.data(user_id);
-
-			if (!user_data) {
-				return null;
-			}
-
-			return {
-				used: function used() {
-					return JSON.stringify(user_data.get_data()).length;
-				},
-				left: function left() {
-					return pb.data("plugin_max_key_length") - Rudolphs_Presents.api.space(user_id).used();
-				}
-			};
-		}
-	}, {
 		key: "sync",
 		value: function sync(user_id) {
 			if (user_id != yootil.user.id()) {
