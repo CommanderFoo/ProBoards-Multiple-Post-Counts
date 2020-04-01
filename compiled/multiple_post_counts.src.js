@@ -36,7 +36,7 @@ class Multiple_Post_Counts {
 			Multiple_Post_Counts_Mini_Profile.init();
 		}
 
-		if((yootil.location.posting() || yootil.location.thread())){
+		if((yootil.location.posting() || yootil.location.thread()) && yootil.user.logged_in()){
 			Multiple_Post_Counts_Post.init();
 		}
 	}
